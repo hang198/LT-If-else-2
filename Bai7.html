@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai7</title>
+</head>
+<body>
+<script>
+    //pt co dang: ax2+bx+c=0
+    let a = Number(prompt("Nhap a: "));
+    let b = Number(prompt("Nhap b: "));
+    let c = Number(prompt("Nhap c: "));
+    let delta;
+    if (a == 0) {
+        alert("Day khong phai la phuong trinh bac 2! Moi ban nhap lai a khac 0!");
+    } else {
+        delta = b * b - 4 * a * c;
+        if (delta > 0) {
+            let x1 = (-b + sqrt(delta)) / (2 * a);
+            let x2 = (-b - sqrt(delta)) / (2 * a);
+            alert("Phuong trinh co hai nghiem phan biet x1= " + x1 + " va x2= " + x2);
+        } else if (delta == 0) {
+            let x = -b / (2 * a);
+            alert("Phuong trinh co nghiem kep x = " + x);
+        } else {
+            alert("Phuong trinh vo nghiem!");
+        }
+    }
+
+</script>
+</body>
+</html>

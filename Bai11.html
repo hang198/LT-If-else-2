@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai11</title>
+</head>
+<body>
+<script>
+    let income = Number(prompt("Nhap so tien thu nhap cua ban: "));
+    let payableMoney;
+    if(income<=5){
+        payableMoney = (income*5)/100;
+    }
+    else if(income>5 && income<=10){
+        payableMoney = (income*10)/100 - 250000;
+    }
+    else if(income>10 && income<=18){
+        payableMoney = (income*15)/100 - 750000;
+    }
+    else if(income>18 && income<=32){
+        payableMoney = (income*20)/100 - 1650000;
+    }
+    else if(income>32 && income<=52){
+        payableMoney = (income*25)/100 - 3250000;
+    }
+    else if(income>52 && income<=80){
+        payableMoney = (income*30)/100 - 5850000;
+    }
+    else{
+        payableMoney = (income*35)/100 - 9850000;
+    }
+    alert("So thue ban phai nop la: "+payableMoney);
+</script>
+</body>
+</html>

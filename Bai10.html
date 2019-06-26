@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai10</title>
+</head>
+<body>
+<script>
+    let NumberkWh = Number(prompt("Nhap vao so kWh: "));
+    let cost;
+    if (NumberkWh > 0 && NumberkWh <= 50) {
+        cost = 1.678 * NumberkWh;
+    } else if (NumberkWh >= 51 && NumberkWh <= 100) {
+        cost = 1.734 * NumberkWh;
+    } else if (NumberkWh >= 101 && NumberkWh <= 200) {
+        cost = 2.014 * NumberkWh;
+    } else if (NumberkWh >= 201 && NumberkWh <= 300) {
+        cost = 2.536 * NumberkWh;
+    } else if (NumberkWh >= 301 && NumberkWh <= 400) {
+        cost = 2.834 * NumberkWh;
+    } else {
+        cost = 2.927 * NumberkWh;
+    }
+    alert("So tien can tra la: " + cost + " nghin dong");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai12</title>
+</head>
+<body>
+<script>
+    // Cách tính lãi suất tiết kiệm ngân hàng 2018
+    // Số tiền lãi = Số tiền gửi x lãi suất (%/năm) x số ngày thực gửi/360.
+    // Số tiền lãi = Số tiền gửi x lãi suất (%năm) x số ngày gửi/360.
+    // Số tiền lãi = Số tiền gửi x lãi suất (%năm)/12 x số tháng gửi.
+    let NumberofMoneySend = Number(prompt("Nhap vao so tien gui: "));
+    let interestRate;
+    let NumberOfMonth = Number(prompt("So thang gui: "));
+    let numberOfInterest;
+    if(NumberOfMonth<=3){
+        interestRate = 4.8;
+        numberOfInterest = NumberofMoneySend * (interestRate)/12 *NumberOfMonth;
+    }
+    else if(NumberOfMonth>3 && NumberofMonth<=6){
+        interestRate = 5.3;
+        numberOfInterest = NumberofMoneySend * (interestRate)/12 *NumberOfMonth;
+    }
+    else if (NumberOfMonth>6 && NumberOfMonth<=9){
+        interestRate = 5.5;
+        numberOfInterest = NumberofMoneySend * (interestRate)/12 *NumberOfMonth;
+    }
+    else if( NumberOfMonth>9 && NumberOfMonth<=12){
+        interestRate = 6.8;
+        numberOfInterest = NumberofMoneySend * (interestRate)/12 *NumberOfMonth;
+    }
+    else{
+        interestRate = 6.8;
+        numberOfInterest = NumberofMoneySend * (interestRate)/12 *NumberOfMonth;
+    }
+    alert("Lai suat la: "+numberOfInterest);
+</script>
+</body>
+</html>
